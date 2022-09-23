@@ -1,4 +1,4 @@
-// jpw tp fimd greatedst common divisor of two numbers using recursion
+// find greatedst common divisor of two numbers using recursion
 
 //comfused point : the return value of the base case climb the recurision ladder withut being modfied in the middle
 // base case answer is the final answer
