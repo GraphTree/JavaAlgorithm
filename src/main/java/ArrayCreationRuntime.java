@@ -3,7 +3,7 @@
 // calculate runtime of creating an array
 public class ArrayCreationRuntime {
 
-    public static int[] arrayCreation(){
+    public static void arrayCreation(){
 
         //type 1  = O(n)
         int[] intArray;
