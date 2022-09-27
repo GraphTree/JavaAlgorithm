@@ -6,13 +6,14 @@ public class MaxProduct {
 
     public static void main(String[] args) {
 
-        int[] test = {100,2,3,4};
-        int[] answer = maxProduct(test);
-        System.out.println(Arrays.toString(answer));
+        int[] intArray = {100,2,3,4};
+        String pairs = maxProduct(intArray);
+        System.out.println(pairs);
+
 
     }
 
-    public static int[] maxProduct(int[] intArray){
+    public static String maxProduct(int[] intArray){
         int maxProduct = 0;
         String pairs="";
         for (int i =0; i<intArray.length; i++){
