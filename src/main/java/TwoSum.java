@@ -4,12 +4,14 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 // Write a program to find all pairs of integers whose sum is equal to a given number.
+//주으사항: java 는 subblock 내에 return 값이 있다고 해당 함수에 return 값이 있다고 여기지 않음. 메인 block 에 또한 return 이 있어야함 (보통 예외를 처리하는데 사)
 import java.util.Arrays;
 public class TwoSum {
     public static void main(String[] args) {
     int target = 10;
     int[] intArray = {1,2,3,4,5,6};
-    twoSum(intArray, target);
+    int[] result = twoSum(intArray, target);
+    System.out.println(Arrays.toString(result));
 
 
 
