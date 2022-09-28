@@ -17,6 +17,7 @@ public class BestScore {
                 break;
             }
         }
+        return first+" "+second;
 
 
     }
