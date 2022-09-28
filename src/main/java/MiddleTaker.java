@@ -6,6 +6,6 @@ public class MiddleTaker {
     }
 
     public static int[] middleTaker(int[] arr){
-        return Arrays.copyOfRange(arr, 1, arr.length-1)
-\    }
+        return Arrays.copyOfRange(arr, 1, arr.length-1);
+    }
 }
