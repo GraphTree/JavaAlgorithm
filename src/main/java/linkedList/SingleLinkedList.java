@@ -6,7 +6,7 @@ public class SingleLinkedList {
     public int size;
 
     public Node createSingleLinkedList(int nodeValue) {
-        head = new Node();
+//        head = new Node();
         Node node = new Node();
         node.next = null;
         node.value = nodeValue;
@@ -42,7 +42,41 @@ public class SingleLinkedList {
             node.next = nextNode;
 
          }
-        size+
+        size++;
+
     }
+
+    public void travserrseSingleLinkedList() {
+        if (head == null) {
+            System.out.println("des not exist");
+        } else {
+            Node tempNode = head;
+            for (int i = 0; i < size; i++) {
+                System.out.println(tempNode.value);
+                if (i != size - 1) {
+                    System.out.println("-> ");
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.println("\n");
+    }
+
+    public boolean searchNode(int nodeValue) {
+        if (head!=null) {
+            Node tempNode = head;
+            for (int i = 0; i < size; i++) {
+                if (tempNode.value == nodeValue) {
+                    System.out.println("found the node at loaction: " + i +"\n");
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+
+        }
+        System.out.println("node not found");
+        return false;
+    }
+
 }
 
